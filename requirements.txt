@@ -1,5 +1,5 @@
 ffmpeg==1.4
-folium==0.12.1.post1
+folium==0.12.1
 fuzzywuzzy==0.18.0
 geopandas==0.10.2
 leafmap==0.9.2
