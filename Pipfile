@@ -12,6 +12,7 @@ pickle5 = "*"
 scikit-learn = "*"
 pdfplumber = "*"
 tika = "*"
+ffmpeg = "*"
 
 
 
