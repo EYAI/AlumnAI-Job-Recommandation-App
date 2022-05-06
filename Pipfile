@@ -10,6 +10,25 @@ nltk = "*"
 matplotlib = "*"
 pickle5 = "*"
 scikit-learn = "*"
+ffmpeg = "*"
+folium = "*"
+fuzzywuzzy = "*"
+geopandas = "*"
+leafmap = "*"
+matplotlib = "*"
+moviepy = "*"
+pdfplumber = "*"0.6.0
+
+Pillow = "*"
+plotly = "*"
+pydub = "*"
+scikit_learn = "*"
+SpeechRecognition = "*"
+streamlit = "*"
+streamlit_authenticator = "*"
+streamlit_option_menu = "*"
+tika==1.24
+
 
 [dev-packages]
 
