@@ -10,20 +10,8 @@ nltk = "*"
 matplotlib = "*"
 pickle5 = "*"
 scikit-learn = "*"
-ffmpeg = "*"
-folium = "*"
-fuzzywuzzy = "*"
-geopandas = "*"
-leafmap = "*"
-moviepy = "*"
 pdfplumber = "*"
-Pillow = "*"
-plotly = "*"
-pydub = "*"
-SpeechRecognition = "*"
-streamlit_authenticator = "*"
-streamlit_option_menu = "*"
-tika = "*"
+
 
 
 [dev-packages]
