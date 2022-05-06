@@ -22,6 +22,7 @@ tika = "1.24"
 fuzzywuzzy ="*"
 plotly = "*"
 leafmap = "*"
+geopandas = "0.10.2"
 
 
 
