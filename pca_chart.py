@@ -6,8 +6,7 @@ from sklearn.decomposition import PCA
 from itertools import cycle
 import pickle5 as pickle
 import streamlit as st
-import plotly.express as px
-import plotly.graph_objects as go
+
 
 
 
