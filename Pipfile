@@ -11,7 +11,7 @@ matplotlib = "*"
 pickle5 = "*"
 scikit-learn = "*"
 pdfplumber = "*"
-
+ffmpeg = "*"
 
 
 [dev-packages]
