@@ -431,7 +431,7 @@ if result:
                                     return Data
                         user_input=""
                         uploaded_file_pdf = st.file_uploader("Please put your CV (PDF)", "pdf")
-                        path = "Exemple_Resumes"
+                        path = "/Exemple_Resumes"
                         os.chmod(path, 0o777)
                         for f in os.listdir(path):
                             os.remove(os.path.join(path, f)) 
@@ -615,7 +615,7 @@ if result:
                                     return Data
                         user_input=""
                         uploaded_file_pdf = st.file_uploader("Please put your CV (PDF)", "pdf")
-                        path = "Exemple_Resumes"
+                        path = "/Exemple_Resumes"
                         os.chmod(path, 0o777)
                         for f in os.listdir(path):
                             os.remove(os.path.join(path, f)) 
