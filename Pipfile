@@ -12,6 +12,7 @@ pickle5 = "*"
 scikit-learn = "*"
 pdfplumber = "*"
 SpeechRecognition = "3.8.1"
+ffmpeg = "*"
 
 
 
