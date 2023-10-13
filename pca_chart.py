@@ -18,7 +18,7 @@ import streamlit as st
 def create_clusters():
     #topic_df, model, vec, topic_list = pda.process_data()
     pca = PCA(n_components=2)
-    topic_df = pd.read_csv('topic_df.csv')
+    topic_df = pd.read_csv('Data/topic_df.csv')
     #topic_df = pd.read_pickle('topic_df.pkl')
     X_train = topic_df.iloc[:, 1:-1]
     y_train = topic_df.iloc[:, -1]
@@ -50,8 +50,8 @@ def transform_user_resume(pca_model, resume):
     take in resume and fit it according to both count vectorizer and PCA model
     '''
     #jobs_df, topic_model, vec, topic_list = pda.process_data()
-    vec = pickle.load(open('job_vec.sav', 'rb'))
-    topic_model = pickle.load(open('topic_model.sav', 'rb'))
+    vec = pickle.load(open('Models/job_vec.sav', 'rb'))
+    topic_model = pickle.load(open('Models/topic_model.sav', 'rb'))
 
     doc = pda.tokenize_stem(resume)
     doc = vec.transform(doc)

@@ -116,7 +116,7 @@ if result:
                 #-------------------------------------------------------------------------------------------------------
 #Variables and Dependecies
     #delete_user("","")
-    os.environ["PATH"]+=":/opt/homebrew/Cellar/ffmpeg/5.0.1/bin"
+    os.environ["PATH"]+=":/opt/homebrew/Cellar/ffmpeg/5.0.1/bin" #change this according to your path
     data =""
     Data=[""]
     user_input=""
@@ -152,7 +152,7 @@ if result:
 
 
 
-                        df_partners = pd.read_csv("Company2.csv",header=None)
+                        df_partners = pd.read_csv("Data/Company2.csv",header=None)
                         df_partners=df_partners.rename(columns=df_partners.iloc[0])
                         df_partners.drop(df_partners.index[0],inplace=True)
                         df_partners.reset_index(drop=True, inplace=True)
@@ -344,7 +344,7 @@ if result:
                                 name1 = row2
                                 return fuzz.token_set_ratio(name, name1)
 
-                            df_Match=pd.read_csv('Profile_Meriem')
+                            df_Match=pd.read_csv('Data/Profile_Meriem')
                             for i in df_Match['headlinee']:    
                                 if(get_ratio(i,user_input) > 30):
                                     index=df_Match.index[df_Match['headlinee']==i]
@@ -362,9 +362,9 @@ if result:
 
                             user_input = pd.Series(user_input)
                             st.subheader('Find your Job Profiling')
-                            topic_model = pickle.load(open('topic_model.sav', 'rb'))
-                            classifier = pickle.load(open('classification_model.sav', 'rb'))
-                            vec = pickle.load(open('job_vec.sav', 'rb'))
+                            topic_model = pickle.load(open('Models/topic_model.sav', 'rb'))
+                            classifier = pickle.load(open('Models/classification_model.sav', 'rb'))
+                            vec = pickle.load(open('Models/job_vec.sav', 'rb'))
 
                             classes, prob = pda.main(user_input, topic_model, classifier, vec)
 
@@ -418,7 +418,7 @@ if result:
                 #-------------------------------------------------------------------------------------------------------
                             #JOBS RECOMMANDATION            
                     if selected=="Jobs":    
-                        df1 = pd.read_csv('jobss.csv')
+                        df1 = pd.read_csv('Data/jobss.csv')
                         df=df1.head(1000)
                         df=df.dropna()
                         df=df.fillna("nan")
@@ -625,7 +625,7 @@ if result:
                             with open(os.path.join("Exemple_Resumes",uploaded_file_pdf.name),"wb") as f:
                               f.write(uploaded_file_pdf.getbuffer())
                         
-                        Company=pd.read_csv("CompanyStartups.csv")
+                        Company=pd.read_csv("Data/CompanyStartups.csv")
                         Company.drop(index=Company[Company['name'] == 'vide'].index, inplace=True)
                         
                         #Profile=pd.read_csv("Profile.csv")
