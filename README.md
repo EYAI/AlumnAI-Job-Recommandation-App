@@ -76,7 +76,8 @@ streamlit run app.py
 8. **Required Skills**: Understand the skills needed for each suggested job.
 
 9. **Admin Dashboard (For Administrators)**: Access the admin interface to manage partner recommendations.
-
+## Demonstration
+[DEMO VIDEO](https://drive.google.com/file/d/1B4TiKbMjn7BYopfp-q1IQWrOA2KJcr8j/view?usp=sharing)
 ## Dependencies
 
 - Streamlit
